@@ -42,7 +42,7 @@ div.resolutionItem {
   font-size: 2em;
   align-items: center;
   transform-origin: top left;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   justify-content: center;
   background-size: cover;
   cursor: pointer;
