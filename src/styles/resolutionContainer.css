@@ -1,0 +1,74 @@
+.resolutionContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.resolutionOptions {
+  position: absolute;
+  display: flex;
+  width: 59%;
+  top: 10%;
+  left: 19%;
+  justify-content: center;
+}
+
+.resolutionBoard {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  width: 59%;
+  height: 63%;
+  position: absolute;
+  /* border: 1px solid red; */
+  top: 18%;
+  left: 19%;
+  padding: 10px;
+}
+.resolutionBoard > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid white; */
+}
+
+div.resolutionItem {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  font-size: 2em;
+  align-items: center;
+  transform-origin: top left;
+  border: 1px solid white;
+  justify-content: center;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+}
+
+
+
+  div.resolutionItem > span.deleteButton {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+  }
+  
+  div.resolutionItem:hover {
+    transform: rotateZ(7deg);
+  }
+
+  div.resolutionItem:hover > span.deleteButton {
+    display: flex;
+  }
